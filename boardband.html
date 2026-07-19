@@ -1,1 +1,210 @@
-Created a boardband.html file
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>ACT OmniView</title>
+    <link rel='stylesheet' href='main.css'>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: #f4f7fc;
+    }
+
+    h1 {
+        text-align:center;
+        color: #1e3a8a;
+        margin-bottom:25px;
+    }
+
+    table {
+        width:100%;
+        border-collapse:collapse;
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    th {
+        background-color: #2563eb;
+        color: #fff;
+        padding: 14px;
+        font-size: 16px;
+    }
+    
+    td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+        background-color: #eaf3ff;
+    }
+
+    tr:hover {
+        background-color: #eaf3ff;
+    }
+
+    .active{
+        background-color:#d1fae5;
+        color:#065f46;
+        padding:6px 12px;
+        border-radius:20px;
+        font-weight:bold;
+    }
+
+    .expired {
+        background-color:#fee2e2;
+        color:#065f46;
+        padding:6px 12px;
+        border-radius:20px;
+        font-weight:bold;
+    }
+
+    .decativated {
+        background-color:#e5e7eb;
+        color:#374151;
+        padding:6px 12px;
+        border-radius:20px;
+        font-weight:bold;
+    }
+
+    .suspended {
+        background-color:#fef3c7;
+        color:#92400e;
+        padding:6px 12px;
+        border-radius:20px;
+        font-weight:bold;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <h1>Subscription Management Dashboard</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>S.No</td>
+            <td>Customer Name</td>
+            <td>Plan Subscription</td>
+            <td>Activation Date</td>
+            <td>Renewal Date</td>
+            <td>Contact No</td>
+            <td>Status</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rahul Sharma</td>
+            <td>Basic 50 Mbps</td>
+            <td>02-Jun-2026</td>
+            <td>02-Aug-2026</td>
+            <td>9876587293</td>
+            <td><span class="active">Active</span></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Priya Nair</td>
+            <td>Silver 100 Mbps</td>
+            <td>10-Jul-2026</td>
+            <td>10-May-2026</td>
+            <td>912653345</td>
+            <td><span class="active">Active</span></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Arjun patel</td>
+            <td>Gold 200 Mbps</td>
+            <td>15-Apr-2026</td>
+            <td>15-Apr-2026</td>
+            <td>8945864345</td>
+            <td><span class="active">Active</span></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Sneha</td>
+            <td>Platinum 500 Mbps</td>
+            <td>20-Mar-2026</td>
+            <td>20-Mar-2026</td>
+            <td>6363640754</td>
+            <td><span class="active">Active</span></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Karan</td>
+            <td>Basic 50 Mbps</td>
+            <td>02-May-2026</td>
+            <td>02-Jun-2026</td>
+            <td>9876587293</td>
+            <td><span class="Expired">Expired</span></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Neeta</td>
+            <td>Silver 100 Mbps</td>
+            <td>10-Jul-2026</td>
+            <td>10-May-2027</td>
+            <td>912653345</td>
+            <td><span class="active">Active</span></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Kathik Kumar</td>
+            <td>Gold 200Mbps</td>
+            <td>15-Apr-2026</td>
+            <td>15-Apr-2027</td>
+            <td>8945864345</td>
+            <td><span class="active">Active</span></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Meera Iyer</td>
+            <td>Platinum 500 Mbps</td>
+            <td>20-Apr-2026</td>
+            <td>20-Apr-2028</td>
+            <td>6363640754</td>
+            <td><span class="deactivated">Deactivated</span></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>Rohan Gupta</td>
+            <td>Gold 200 Mbps</td>
+            <td>15-Jul-2026</td>
+            <td>15-Aug-2026</td>
+            <td>7890123456</td>
+            <td><span class="active">Active</span></td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Simran kaur</td>
+            <td>Platinum 500 Mbps</td>
+            <td>20-Apr-2025</td>
+            <td>20-Apr-2026</td>
+            <td>6363640754</td>
+            <td><span class="suspended">Suspended</span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
